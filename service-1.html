@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création Web Vitrine Pro - LegalTech Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-hero{padding:140px 0 80px;background:#0A192F;position:relative;overflow:hidden}
+        .service-hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&h=600&fit=crop') center/cover no-repeat;opacity:.1}
+        .service-hero-content{position:relative;z-index:1;text-align:center}
+        .service-hero .section-tag{margin-bottom:12px}
+        .service-hero h1{font-size:clamp(28px,5vw,44px);color:#f1f5f9;margin-bottom:16px}
+        .service-hero p{font-size:16px;color:rgba(255,255,255,.5);max-width:600px;margin:0 auto}
+        .service-detail{padding:80px 0;background:#fff}
+        .service-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+        @media(max-width:768px){.service-detail-grid{grid-template-columns:1fr;gap:40px}}
+        .service-detail-img{border-radius:16px;overflow:hidden}
+        .service-detail-img img{width:100%;height:400px;object-fit:cover}
+        .service-detail-body h2{font-size:28px;color:#0A192F;margin-bottom:16px}
+        .service-detail-body p{color:#64748b;line-height:1.7;margin-bottom:20px}
+        .included-box{background:#f8fafc;border-left:3px solid #D4AF37;padding:20px;border-radius:0 12px 12px 0;margin-bottom:24px}
+        .included-box h3{font-size:16px;color:#0A192F;margin-bottom:8px}
+        .included-box p{color:#64748b;font-size:14px;line-height:1.7}
+        .price-box{text-align:center;background:#0A192F;border-radius:16px;padding:32px;margin-bottom:24px}
+        .price-box .amount{font-size:36px;font-weight:800;color:#D4AF37;display:block}
+        .price-box .detail{font-size:14px;color:rgba(255,255,255,.5);margin-top:4px;display:block}
+        .back-link{display:inline-flex;align-items:center;gap:8px;color:#D4AF37;font-weight:600;font-size:14px;margin-top:24px;transition:color .2s}
+        .back-link:hover{color:#876a1a}
+    </style>
+</head>
+<body>
+
+<header class="navbar scrolled">
+  <nav class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon"><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg></span>
+      <span class="logo-text"><span class="logo-bold">LEGAL</span><span class="logo-gold">TECH</span><span class="logo-sub">SOLUTIONS</span></span>
+    </a>
+    <a href="index.html#services" class="back-link">← Retour aux services</a>
+  </nav>
+</header>
+
+<section class="service-hero">
+  <div class="service-hero-bg"></div>
+  <div class="container service-hero-content">
+    <p class="section-tag gold">Pack 1</p>
+    <h1>Création Web Vitrine Pro</h1>
+    <p>Conception de sites vitrines modernes, responsives et optimisés pour le référencement Google (SEO). Blindage légal initial inclus.</p>
+  </div>
+</section>
+
+<section class="service-detail">
+  <div class="container">
+    <div class="service-detail-grid">
+      <div class="service-detail-img">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Création Web Vitrine">
+      </div>
+      <div class="service-detail-body">
+        <h2>Description complète</h2>
+        <p>Conception complète de votre infrastructure numérique de marque. Ce service comprend le développement sur-mesure de sites vitrines professionnels (4 pages clés : Accueil, À propos, Services, Contact) en code natif léger. Nous intégrons un référencement naturel (SEO) optimisé pour capter vos clients sur Google en Afrique et dans la diaspora.</p>
+        <div class="included-box">
+          <h3>Inclus d'office :</h3>
+          <p>Rédaction professionnelle et intégration technique de vos Mentions Légales obligatoires et de vos conditions d'utilisation.</p>
+        </div>
+        <div class="price-box">
+          <span class="amount">150 000 XOF</span>
+          <span class="detail">75 000 XOF d'acompte / 75 000 XOF à la livraison</span>
+        </div>
+        <a href="index.html#contact" class="btn btn-gold shimmer">Sécuriser mon projet →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 LEGALTECH SOLUTIONS. Tous droits réservés.</p>
+    <div class="footer-links">
+      <a href="mentions-legales.html">Mentions Légales</a>
+      <span class="footer-sep">|</span>
+      <a href="politique-confidentialite.html">Politique de Confidentialité</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
