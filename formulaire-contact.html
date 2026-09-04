@@ -1,0 +1,52 @@
+<!-- Formulaire Officiel de Capture - LegalTech Solutions --><form action="https://formspree.io/f/mzebvyzj" method="POST" style="max-width: 500px; margin: 0 auto; font-family: sans-serif; background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+    
+    <!-- Champ Nom de l'interlocuteur / Structure -->
+    <div style="margin-bottom: 15px;">
+        <label for="client-name" style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; color: #002f6c;">Nom complet ou Nom de l'entreprise :</label>
+        <input type="text" id="client-name" name="Nom_Client" required placeholder="Ex: S.A.R.L. Alpha Togo" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+    </div>
+
+
+    <!-- Champ Courriel (Permet la réponse directe par e-mail) -->
+    <div style="margin-bottom: 15px;">
+        <label for="client-email" style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; color: #002f6c;">Adresse email professionnelle :</label>
+        <input type="email" id="client-email" name="_replyto" required placeholder="contact@votreentreprise.tg" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+    </div>
+
+
+    <!-- Champ Contact WhatsApp -->
+    <div style="margin-bottom: 15px;">
+        <label for="client-phone" style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; color: #002f6c;">Numéro WhatsApp (avec indicatif pays) :</label>
+        <input type="tel" id="client-phone" name="Telephone_WhatsApp" required placeholder="Ex: +228 98 09 76 21" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+    </div>
+
+
+    <!-- Sélection du Service recherché -->
+    <div style="margin-bottom: 15px;">
+        <label for="client-need" style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; color: #002f6c;">Quel est votre besoin prioritaire ?</label>
+        <select id="client-need" name="Besoin_Client" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; background: white;">
+            <option value="" disabled selected>Choisissez une option...</option>
+            <option value="Site Vitrine & Mentions Légales">Création de Site Vitrine Pro & Mentions Légales</option>
+            <option value="Boutique E-commerce & Mobile Money">Boutique E-commerce & Intégration Mobile Money</option>
+            <option value="Mise en conformité Protection Données">Mise en conformité RGPD Africain / IPDCP</option>
+            <option value="Gestion de litige / Droit OHADA">Gestion de litige commercial / Droit OHADA</option>
+        </select>
+    </div>
+
+
+    <!-- CASE À COCHER DE CONFORMITÉ IPDCP (Togo) -->
+    <div style="margin-bottom: 20px; text-align: left;">
+        <label style="display: flex; align-items: flex-start; cursor: pointer; font-size: 12px; color: #444; line-height: 1.4;">
+            <input type="checkbox" id="rgpd-consent" name="Consentement_Légal_Validé" value="Oui, validé sur le site" required style="margin-right: 10px; margin-top: 2px; width: 16px; height: 16px; cursor: pointer;">
+            <span>
+                En soumettant ce formulaire, j'accepte que <strong>LegalTech Solutions</strong> traite mes informations professionnelles dans le but exclusif de réaliser mon diagnostic gratuit et de m'adresser une proposition de service conforme à la réglementation togolaise.
+            </span>
+        </label>
+    </div>
+
+
+    <!-- Bouton Soumettre -->
+    <button type="submit" style="width: 100%; padding: 12px; background-color: #002f6c; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 16px;">
+        Demander mon diagnostic gratuit →
+    </button>
+</form>
