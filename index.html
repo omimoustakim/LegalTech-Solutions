@@ -444,35 +444,35 @@
       </div>
     </div>
 
-    <form class="contact-form reveal" action="https://formspree.io/f/mzebvyzj" method="POST" novalidate>
+    <form class="contact-form reveal" action="https://formspree.io/f/mzebvyzj" method="POST">
       <div class="form-group">
-        <label for="fname">Nom Complet ou Raison Sociale <span class="gold">*</span></label>
-        <input type="text" id="fname" name="name" placeholder="Votre nom ou entreprise" required>
+        <label for="client-name">Nom complet ou Raison sociale <span class="gold">*</span></label>
+        <input type="text" id="client-name" name="Nom_Client" required placeholder="Ex: S.A.R.L. Alpha Togo">
       </div>
       <div class="form-group">
-        <label for="fphone">Numéro WhatsApp Professionnel <span class="gold">*</span></label>
-        <input type="tel" id="fphone" name="phone" placeholder="+229 53 33 36 46" required>
+        <label for="client-email">Adresse email professionnelle <span class="gold">*</span></label>
+        <input type="email" id="client-email" name="_replyto" required placeholder="contact@votreentreprise.tg">
       </div>
       <div class="form-group">
-        <label for="fneed">Type de projet <span class="gold">*</span></label>
-        <select id="fneed" name="need" required>
-          <option value="" disabled selected>Sélectionnez votre besoin</option>
-          <option value="vitrine">Création de Site Vitrine Pro</option>
-          <option value="ecommerce">Boutique E-commerce complète</option>
-          <option value="conformite">Mise en conformité juridique</option>
-          <option value="pack">Pack Intégral Tech + Droit</option>
+        <label for="client-phone">Numéro WhatsApp (avec indicatif pays) <span class="gold">*</span></label>
+        <input type="tel" id="client-phone" name="Telephone_WhatsApp" required placeholder="Ex: +228 98 09 76 21">
+      </div>
+      <div class="form-group">
+        <label for="client-need">Quel est votre besoin prioritaire ? <span class="gold">*</span></label>
+        <select id="client-need" name="Besoin_Client" required>
+          <option value="" disabled selected>Choisissez une option...</option>
+          <option value="Site Vitrine & Mentions Légales">Création de Site Vitrine Pro & Mentions Légales</option>
+          <option value="Boutique E-commerce & Mobile Money">Boutique E-commerce & Intégration Mobile Money</option>
+          <option value="Mise en conformité Protection Données">Mise en conformité RGPD Africain / IPDCP</option>
+          <option value="Gestion de litige / Droit OHADA">Gestion de litige commercial / Droit OHADA</option>
         </select>
       </div>
-      <div class="form-group">
-        <label for="fdesc">Décrivez brièvement votre projet</label>
-        <textarea id="fdesc" name="description" rows="4" placeholder="Parlez-nous de votre projet ou de vos craintes juridiques..."></textarea>
-      </div>
       <div class="form-check">
-        <input type="checkbox" id="fconsent" required>
-        <label for="fconsent">J'accepte que mes données professionnelles soient traitées conformément à la <a href="politique-confidentialite.html" class="gold">Politique de Confidentialité</a> de l'agence afin de recevoir mon diagnostic gratuit. <span class="gold">*</span></label>
+        <input type="checkbox" id="rgpd-consent" name="Consentement_Légal_Validé" value="Oui, validé sur le site" required>
+        <label for="rgpd-consent">En soumettant ce formulaire, j'accepte que <strong>LegalTech Solutions</strong> traite mes informations professionnelles dans le but exclusif de réaliser mon diagnostic gratuit et de m'adresser une proposition de service conforme à la réglementation togolaise. <span class="gold">*</span></label>
       </div>
       <button type="submit" class="btn btn-gold btn-full shimmer">
-        Soumettre ma demande de diagnostic →
+        Demander mon diagnostic gratuit →
       </button>
     </form>
   </div>
