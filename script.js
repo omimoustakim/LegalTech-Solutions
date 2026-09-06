@@ -45,7 +45,7 @@ mobileLinks.forEach(function(link) {
 
 // ═══ ACTIVE NAV LINK ═══
 var navLinks = document.querySelectorAll('.nav-link');
-var sections = ['contact', 'portfolio', 'pourquoi', 'services', 'accueil'];
+var sections = ['contact', 'portfolio', 'fondateur', 'pourquoi', 'services', 'accueil'];
 
 function updateActiveLink() {
   var atBottom = (window.innerHeight + window.pageYOffset) >= document.body.scrollHeight - 60;

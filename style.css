@@ -155,6 +155,24 @@ input,select,textarea,button{font-family:inherit}
 .pourquoi-title{font-size:20px;font-weight:700;color:#f1f5f9;margin-bottom:12px}
 .pourquoi-desc{font-size:14px;color:rgba(255,255,255,.4);line-height:1.7}
 
+/* ═══ FONDATEUR ═══ */
+.fondateur{padding:100px 0;background:#0d1f3c;position:relative;overflow:hidden}
+.fondateur::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(212,175,55,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,55,.03) 1px,transparent 1px);background-size:60px 60px;opacity:.2;pointer-events:none}
+.fondateur .section-title{color:#f1f5f9}
+.fondateur-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:start}
+@media(max-width:768px){.fondateur-grid{grid-template-columns:1fr;gap:40px}}
+.fondateur-avatar{text-align:center;padding:32px}
+.fondateur-avatar-circle{width:100px;height:100px;background:rgba(212,175,55,.08);border:2px solid rgba(212,175,55,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;overflow:hidden}
+.fondateur-avatar-circle img{filter:brightness(1.05) contrast(1.05)}
+.fondateur-name{font-size:22px;font-weight:700;color:#f1f5f9;margin-bottom:4px}
+.fondateur-role{font-size:13px;color:#D4AF37;margin-bottom:20px}
+.fondateur-badges{list-style:none;padding:0;text-align:left}
+.fondateur-badges li{font-size:12px;color:rgba(255,255,255,.45);padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06);line-height:1.5}
+.fondateur-badges li::before{content:'→';color:#D4AF37;margin-right:8px}
+.fondateur-bio p{font-size:15px;color:rgba(255,255,255,.55);line-height:1.8;margin-bottom:16px}
+.fondateur-note{background:rgba(212,175,55,.06);border:1px solid rgba(212,175,55,.15);border-radius:12px;padding:20px;margin-top:24px}
+.fondateur-note p{font-size:13px;color:rgba(255,255,255,.5);line-height:1.6;margin:0}
+
 /* ═══ PORTFOLIO ═══ */
 .portfolio{padding:100px 0;background:#0A192F;position:relative;overflow:hidden}
 .portfolio::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(212,175,55,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(212,175,55,.04) 1px,transparent 1px);background-size:60px 60px;opacity:.3;pointer-events:none}
