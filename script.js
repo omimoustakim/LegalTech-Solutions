@@ -80,6 +80,30 @@ document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
   });
 });
 
+// ═══ COOKIE BANNER ═══
+document.addEventListener("DOMContentLoaded", function () {
+  var cookieBanner = document.getElementById("cookie-banner");
+  var btnAccept = document.getElementById("btn-accept-cookies");
+  var btnDeny = document.getElementById("btn-deny-cookies");
+
+  var cookieChoice = localStorage.getItem("legaltech_cookies");
+
+  if (!cookieChoice) {
+    cookieBanner.classList.remove("hidden");
+  }
+
+  btnAccept.addEventListener("click", function () {
+    localStorage.setItem("legaltech_cookies", "accepted");
+    cookieBanner.classList.add("hidden");
+    console.log("Scripts de tracking activés légalement.");
+  });
+
+  btnDeny.addEventListener("click", function () {
+    localStorage.setItem("legaltech_cookies", "denied");
+    cookieBanner.classList.add("hidden");
+  });
+});
+
 // ═══ MODALES SERVICES ═══
 var modalOverlay = document.getElementById('modalOverlay');
 
