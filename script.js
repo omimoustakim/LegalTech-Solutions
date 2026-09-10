@@ -80,6 +80,26 @@ document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
   });
 });
 
+// ═══ EBOOK FORM ═══
+document.addEventListener("DOMContentLoaded", function () {
+  var ebookForm = document.getElementById("ebook-form");
+  if (ebookForm) {
+    ebookForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var data = new FormData(ebookForm);
+      fetch(ebookForm.action, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" }
+      }).then(function () {
+        window.location.href = "merci-ebook.html";
+      }).catch(function () {
+        window.location.href = "merci-ebook.html";
+      });
+    });
+  }
+});
+
 // ═══ COOKIE BANNER ═══
 document.addEventListener("DOMContentLoaded", function () {
   var cookieBanner = document.getElementById("cookie-banner");
