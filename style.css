@@ -332,6 +332,17 @@ details[open] .faq-answer{max-height:500px;padding-bottom:20px}
 .methode-desc{font-size:13.5px;color:#64748b;line-height:1.65;margin-bottom:16px}
 .methode-time{display:inline-block;font-size:11px;font-weight:600;color:#2563eb;background:#eff6ff;padding:4px 10px;border-radius:999px}
 
+/* ═══ MOTION SECTION ═══ */
+.motion-section{padding:100px 0;background:#f8fafc}
+.motion-video-wrapper{margin:0 -24px 40px;padding:0 24px}
+.motion-video{aspect-ratio:16/9;border-radius:0;overflow:hidden;border:none;background:#0f172a}
+.motion-video video{width:100%;height:100%;object-fit:cover;display:block}
+.motion-points{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:900px;margin:0 auto}
+@media(max-width:700px){.motion-points{grid-template-columns:1fr}}
+.motion-point{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:20px;text-align:center}
+.motion-point strong{display:block;font-size:15px;font-weight:700;color:#0f172a;margin-bottom:6px}
+.motion-point span{font-size:13px;color:#64748b;line-height:1.5}
+
 /* ═══ CTA BAND ═══ */
 .cta-band{padding:56px 0;background:#0f172a}
 .cta-band-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
@@ -339,13 +350,11 @@ details[open] .faq-answer{max-height:500px;padding-bottom:20px}
 .cta-band-text p{font-size:15px;color:#94a3b8;max-width:480px}
 .cta-band .btn-gold{flex-shrink:0}
 
-
-
-/* ═══ ICONS (méthode, CTA) ═══ */
+/* ═══ ICONS (méthode, motion, CTA) ═══ */
 .methode-icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:#eff6ff;border-radius:12px;margin-bottom:14px;color:#2563eb;transition:all .3s}
 .methode-step:hover .methode-icon{background:#2563eb;color:#fff}
 .methode-num{margin-top:0}
 
-
+.motion-point-icon{width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:#eff6ff;border-radius:11px;margin:0 auto 12px;color:#2563eb}
 
 .cta-band-icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:rgba(37,99,235,.15);border-radius:12px;margin-bottom:14px;color:#60a5fa}
