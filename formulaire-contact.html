@@ -1,52 +1,108 @@
-<!-- Formulaire Officiel de Capture - LegalTech Solutions --><form action="https://formspree.io/f/mzebvyzj" method="POST" style="max-width: 500px; margin: 0 auto; font-family: sans-serif; background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-    
-    <!-- Champ Nom de l'interlocuteur / Structure -->
-    <div style="margin-bottom: 15px;">
-        <label for="client-name" style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; color: #002f6c;">Nom complet ou Nom de l'entreprise :</label>
-        <input type="text" id="client-name" name="Nom_Client" required placeholder="Ex: S.A.R.L. Votre Entreprise" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire Diagnostic — LegalTech Solutions</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="yield.css?v=2">
+</head>
+<body>
+
+<header class="hd">
+  <div class="c">
+    <a href="index.html" class="logo"><span class="mark">LTS</span><span class="logo-text">LegalTech Solutions</span></a>
+    <nav class="nav" id="nav">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#pourquoi">Pourquoi nous</a>
+      <a href="index.html#methode">Méthode</a>
+      <a href="index.html#realisations">Réalisations</a>
+      <a href="index.html#equipe">Équipe</a>
+      <a href="index.html#temoignages">Témoignages</a>
+      <a href="contact.html#formulaire">Contact</a>
+    </nav>
+    <a href="contact.html#formulaire" class="btn b1">Diagnostic gratuit <svg class="ico"><use href="#arrow"/></svg></a>
+    <button class="burger" id="bg" aria-label="Menu"><svg class="ico"><use href="#menu"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero2" style="padding-top:56px;padding-bottom:32px">
+    <div class="c">
+      <div class="hbox" style="border-radius:22px;padding:48px 28px;text-align:center;max-width:600px;margin:0 auto">
+        <span class="tag2" style="margin-bottom:16px;display:inline-block"><svg class="ico"><use href="#mail"/></svg> Diagnostic Gratuit</span>
+        <h1 style="font-size:clamp(32px,6vw,48px);margin-bottom:12px">Formulaire de Capture Officiel</h1>
+        <p style="color:var(--mut);margin-bottom:0">Remplissez ce formulaire pour recevoir votre audit technique & juridique sous 24h.</p>
+      </div>
     </div>
+  </section>
 
-
-    <!-- Champ Courriel (Permet la réponse directe par e-mail) -->
-    <div style="margin-bottom: 15px;">
-        <label for="client-email" style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; color: #002f6c;">Adresse email professionnelle :</label>
-        <input type="email" id="client-email" name="_replyto" required placeholder="contact@votreentreprise.tg" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+  <section style="padding-top:16px;padding-bottom:64px">
+    <div class="c" style="max-width:600px">
+      <form action="https://formspree.io/f/mzebvyzj" method="POST" style="background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:36px;display:flex;flex-direction:column;gap:20px">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div>
+            <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink)">Prénom *</label>
+            <input type="text" name="Nom_Client" required style="width:100%;padding:12px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;outline:none;transition:border .2s" placeholder="Votre prénom">
+          </div>
+          <div>
+            <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink)">Nom *</label>
+            <input type="text" name="Prenom_Client" required style="width:100%;padding:12px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;outline:none;transition:border .2s" placeholder="Votre nom">
+          </div>
+        </div>
+        <div>
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink)">Email professionnel *</label>
+          <input type="email" name="Email_Client" required style="width:100%;padding:12px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;outline:none;transition:border .2s" placeholder="contact@votresociete.com">
+        </div>
+        <div>
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink)">WhatsApp (avec indicatif) *</label>
+          <input type="tel" name="Telephone_WhatsApp" required style="width:100%;padding:12px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;outline:none;transition:border .2s" placeholder="+228 9X XX XX XX">
+        </div>
+        <div>
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink)">Besoin prioritaire *</label>
+          <select name="Besoin_Client" required style="width:100%;padding:12px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;outline:none;background:#fff;cursor:pointer">
+            <option value="" disabled selected>Choisissez une option…</option>
+            <option value="Site Vitrine & Mentions Légales">Site Vitrine & Mentions Légales (99 000 XOF)</option>
+            <option value="E-commerce + Mobile Money">E-commerce + Mobile Money (179 000 XOF+)</option>
+            <option value="Conformité RGPD / Audit">Conformité RGPD Afrique / Audit (75 000 XOF+)</option>
+            <option value="Design UX/UI">Design UX/UI / Wireframes / Design System</option>
+            <option value="Maintenance & Pack Sérénité">Maintenance & Pack Sérénité (50 000 XOF/an+)</option>
+            <option value="Autre">Autre / Pas sûr encore</option>
+          </select>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:10px;font-size:12px;color:var(--mut);line-height:1.5">
+          <input type="checkbox" name="Consentement_Legal" id="rgpd-consent" required style="margin-top:2px;width:16px;height:16px;accent-color:var(--gold);flex-shrink:0">
+          <label for="rgpd-consent">J'accepte que LegalTech Solutions traite mes données pour me répondre, conformément à la <a href="politique-confidentialite.html" style="color:var(--gold);text-decoration:underline">Politique de Confidentialité</a>. Je peux me désinscrire à tout moment.</label>
+        </div>
+        <button type="submit" class="btn bg" style="width:100%;justify-content:center;padding:16px 32px">Envoyer ma demande <svg class="ico"><use href="#arrow"/></svg></button>
+      </form>
+      
+      <div style="text-align:center;margin-top:32px">
+        <a href="index.html" class="btn b2">← Retour à l'accueil</a>
+      </div>
     </div>
+  </section>
+</main>
 
-
-    <!-- Champ Contact WhatsApp -->
-    <div style="margin-bottom: 15px;">
-        <label for="client-phone" style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; color: #002f6c;">Numéro WhatsApp (avec indicatif pays) :</label>
-        <input type="tel" id="client-phone" name="Telephone_WhatsApp" required placeholder="Ex: +228 98 09 76 21" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+<footer class="ft">
+  <div class="c">
+    <div class="fg">
+      <div><a href="index.html" class="logo"><span class="mark">LTS</span><span class="logo-text">LegalTech Solutions</span></a><p class="tag">L'agence qui allie code et droit.</p></div>
+      <div><h4>Services</h4><ul><li><a href="service-1.html">Développement Web</a></li><li><a href="service-2.html">Mobile</a></li><li><a href="service-3.html">E-commerce</a></li><li><a href="service-4.html">Conformité</a></li></ul></div>
+      <div><h4>Légal</h4><ul><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="politique-confidentialite.html">Confidentialité</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:omimoustakim@gmail.com">omimoustakim@gmail.com</a></li><li>Lomé, Togo</li></ul></div>
     </div>
+    <div class="fb"><span>© 2025 LegalTech Solutions.</span><span>Fait avec rigueur, code & droit.</span></div>
+  </div>
+</footer>
 
-
-    <!-- Sélection du Service recherché -->
-    <div style="margin-bottom: 15px;">
-        <label for="client-need" style="display: block; font-weight: bold; margin-bottom: 5px; font-size: 14px; color: #002f6c;">Quel est votre besoin prioritaire ?</label>
-        <select id="client-need" name="Besoin_Client" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; background: white;">
-            <option value="" disabled selected>Choisissez une option...</option>
-            <option value="Site Vitrine & Mentions Légales">Création de Site Vitrine Pro & Mentions Légales</option>
-            <option value="Boutique E-commerce & Mobile Money">Boutique E-commerce & Intégration Mobile Money</option>
-            <option value="Mise en conformité Protection Données">Mise en conformité RGPD Africain / IPDCP</option>
-            <option value="Gestion de litige / Droit des Affaires">Gestion de litige commercial / Droit des Affaires</option>
-        </select>
-    </div>
-
-
-    <!-- CASE À COCHER DE CONFORMITÉ IPDCP (Togo) -->
-    <div style="margin-bottom: 20px; text-align: left;">
-        <label style="display: flex; align-items: flex-start; cursor: pointer; font-size: 12px; color: #444; line-height: 1.4;">
-            <input type="checkbox" id="rgpd-consent" name="Consentement_Légal_Validé" value="Oui, validé sur le site" required style="margin-right: 10px; margin-top: 2px; width: 16px; height: 16px; cursor: pointer;">
-            <span>
-                En soumettant ce formulaire, j'accepte que <strong>LegalTech Solutions</strong> traite mes informations professionnelles dans le but exclusif de réaliser mon diagnostic gratuit et de m'adresser une proposition de service conforme à la réglementation en vigueur.
-            </span>
-        </label>
-    </div>
-
-
-    <!-- Bouton Soumettre -->
-    <button type="submit" style="width: 100%; padding: 12px; background-color: #002f6c; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 16px;">
-        Demander mon diagnostic gratuit →
-    </button>
-</form>
+<script>
+  const n=document.getElementById('nav');
+  document.getElementById('bg').onclick=()=>n.classList.toggle('open');
+  n.querySelectorAll('a').forEach(a=>a.onclick=()=>n.classList.remove('open'));
+</script>
+</body>
+</html>

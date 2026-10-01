@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boutique E-commerce & Protection - LegalTech Solutions</title>
+    <title>Boutique E-commerce - LegalTech Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -28,6 +28,15 @@
         .price-box{text-align:center;background:#0A192F;border-radius:16px;padding:32px;margin-bottom:24px}
         .price-box .amount{font-size:36px;font-weight:800;color:#D4AF37;display:block}
         .price-box .detail{font-size:14px;color:rgba(255,255,255,.5);margin-top:4px;display:block}
+        .price-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:24px 0}
+        @media(max-width:768px){.price-cards{grid-template-columns:1fr}}
+        .price-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;text-align:center;transition:all .3s}
+        .price-card.featured{border-color:#bfdbfe;background:#eff6ff}
+        .price-card h4{font-size:16px;font-weight:700;color:#2563eb;margin-bottom:8px}
+        .price-card .amount{font-size:28px;font-weight:800;color:#0f172a;display:block;margin-bottom:12px}
+        .price-card ul{list-style:none;padding:0;text-align:left}
+        .price-card li{font-size:13px;color:#64748b;padding:6px 0;border-bottom:1px solid #e2e8f0}
+        .price-card li:last-child{border-bottom:none}
         .back-link{display:inline-flex;align-items:center;gap:8px;color:#D4AF37;font-weight:600;font-size:14px;margin-top:24px;transition:color .2s}
         .back-link:hover{color:#876a1a}
     </style>
@@ -47,8 +56,8 @@
 <section class="service-hero">
   <div class="service-hero-bg"></div>
   <div class="container service-hero-content">
-    <p class="section-tag gold">Pack 2</p>
-    <h1>Boutique E-commerce & Protection</h1>
+    <p class="section-tag gold">Boutique E-commerce</p>
+    <h1>E-commerce & Protection — Code + Droit</h1>
     <p>Déploiement de votre boutique en ligne avec intégration Mobile Money (T-Money, Flooz, MTN) et rédaction sur-mesure de vos CGV.</p>
   </div>
 </section>
@@ -60,17 +69,43 @@
         <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop" alt="Boutique E-commerce">
       </div>
       <div class="service-detail-body">
-        <h2>Description complète</h2>
-        <p>Vendez vos produits sur tout le continent sans friction. Nous développons votre boutique en ligne avec une interface mobile fluide et des tunnels d'achat optimisés pour maximiser les conversions. Intégration complète des API de paiement par Mobile Money nationaux et sous-régionaux et par carte bancaire.</p>
+        <h2>Deux formules adaptées à votre budget</h2>
+        <p>Vendez vos produits sur tout le continent sans friction. Nous développons votre boutique en ligne avec une interface mobile fluide et des tunnels d'achat optimisés pour maximiser les conversions. Intégration complète des API de paiement par Mobile Money nationaux et sous-régionaux (T-Money, Flooz, MTN MoMo) et par carte bancaire. CGV sur-mesure incluses pour éviter les litiges.</p>
+        
+        <div class="price-cards">
+          <div class="price-card">
+            <h4>E-commerce Essentiel</h4>
+            <span class="amount">179 000 XOF</span>
+            <ul>
+              <li>Boutique en ligne complète (produits, catégories, panier, checkout)</li>
+              <li>Paiement Mobile Money (T-Money, Flooz, MTN) + Carte bancaire</li>
+              <li>Interface mobile fluide & tunnels d'achat optimisés</li>
+              <li>CGV sur-mesure + politiques livraison/retour/remboursement</li>
+              <li>Mentions Légales + Politique de Confidentialité</li>
+              <li>Hébergement + domaine 1 an + SSL</li>
+              <li>Livraison sous 3-5 semaines</li>
+            </ul>
+          </div>
+          <div class="price-card featured">
+            <h4>E-commerce Pro</h4>
+            <span class="amount">219 000 XOF</span>
+            <ul>
+              <li>Tout l'Essentiel inclus</li>
+              <li>Design premium & personnalisé</li>
+              <li>Fonctionnalités avancées (avis clients, wishlist, codes promo, upsell)</li>
+              <li>Tableau de bord analytics simplifié</li>
+              <li>30 jours de corrections incluses post-livraison</li>
+              <li>Formation administration boutique + gestion commandes</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="included-box">
-          <h3>Inclus d'office :</h3>
-          <p>Pour éviter les litiges commerciaux ou les clients de mauvaise foi, nous rédigeons sur-mesure vos Conditions Générales de Vente (CGV), politiques de livraison et de remboursement.</p>
+          <h3>Inclus dans les deux formules :</h3>
+          <p>Rédaction sur-mesure de vos Conditions Générales de Vente (CGV), politiques de livraison et de remboursement. Mentions Légales + Politique de Confidentialité. Conformité RGPD Afrique.</p>
         </div>
-        <div class="price-box">
-          <span class="amount">250 000 XOF</span>
-          <span class="detail">125 000 XOF d'acompte / 125 000 XOF à la livraison</span>
-        </div>
-        <a href="index.html#contact" class="btn btn-gold shimmer">Sécuriser mon projet →</a>
+
+        <a href="index.html#contact" class="btn btn-gold shimmer" style="display:inline-block;width:100%">Sécuriser mon projet →</a>
       </div>
     </div>
   </div>
