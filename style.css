@@ -379,6 +379,10 @@ details[open] .faq-answer{max-height:500px;padding-bottom:20px}
 .contact-item-value{font-size:14.5px;color:#0f172a;font-weight:500}
 .contact-item-value a{color:#2563eb;transition:color .2s}
 .contact-item-value a:hover{color:#1d4ed8}
+.contact-item-icon.whatsapp-btn{background:#25d366;color:#fff}
+.contact-item-icon.whatsapp-btn svg{color:#fff}
+.whatsapp-link{font-weight:600;color:#25d366 !important}
+.whatsapp-link:hover{color:#1ebd5a !important;text-decoration:underline}
 .contact-form{background:#f8fafc;border-radius:16px;padding:32px;border:1px solid #e2e8f0}
 .form-group{margin-bottom:16px}
 .form-group label{display:block;font-size:13px;font-weight:600;color:#334155;margin-bottom:6px}
