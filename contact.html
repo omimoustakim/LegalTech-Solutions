@@ -3,211 +3,261 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact & Diagnostic Gratuit — LegalTech Solutions</title>
+  <title>Contact & Diagnostic Gratuit  LegalTech Solutions</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="yield.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=11">
 </head>
 <body>
 
-<header class="hd">
-  <div class="c">
-    <a href="index.html" class="logo"><span class="mark">LTS</span><span class="logo-text">LegalTech Solutions</span></a>
-    <nav class="nav" id="nav">
-      <a href="index.html#services">Services</a>
-      <a href="index.html#pourquoi">Pourquoi nous</a>
-      <a href="index.html#methode">Méthode</a>
-      <a href="index.html#realisations">Réalisations</a>
-      <a href="index.html#equipe">Équipe</a>
-      <a href="index.html#temoignages">Témoignages</a>
-      <a href="contact.html#formulaire" class="active">Contact</a>
-    </nav>
-    <a href="#formulaire" class="btn b1">Diagnostic gratuit <svg class="ico"><use href="#arrow"/></svg></a>
-    <button class="burger" id="bg" aria-label="Menu"><svg class="ico"><use href="#menu"/></svg></button>
-  </div>
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <nav class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">
+        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+      </span>
+      <span class="logo-text"><span class="logo-bold">LEGAL</span><span class="logo-gold">TECH</span><span class="logo-sub">SOLUTIONS</span></span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link" data-section="accueil">Accueil</a></li>
+      
+      <li class="nav-dropdown">
+        <button class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Ce qu'on construit <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="dropdown-menu" role="menu">
+          <div class="dropdown-grid">
+            <div class="dropdown-column">
+              <h4>Sites Web</h4>
+              <a href="service-1.html" role="menuitem">Vitrine Essentielle</a>
+              <a href="service-2.html" role="menuitem">E-commerce Essentiel</a>
+            </div>
+            <div class="dropdown-column">
+              <h4>Conformité & Juridique</h4>
+              <a href="service-3.html" role="menuitem">Conformité RGPD Africain</a>
+              <a href="service-4.html" role="menuitem">Secrétariat Juridique</a>
+              <a href="service-6.html" role="menuitem">Audit de Conformité</a>
+            </div>
+            <div class="dropdown-column">
+              <h4>Accompagnement</h4>
+              <a href="service-6.html" role="menuitem">Pack Sérénité Annuel</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Réalisations <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="dropdown-menu" role="menu">
+          <div class="dropdown-grid">
+            <div class="dropdown-column">
+              <h4>Portfolio</h4>
+              <a href="portfolio.html" role="menuitem">Tous nos projets</a>
+              <a href="etude-de-cas-grillz-empire.html" role="menuitem">Grillz Empire</a>
+              <a href="etude-de-cas-linefood.html" role="menuitem">Linefood</a>
+              <a href="etude-de-cas-hk-shop.html" role="menuitem">HK Shop</a>
+              <a href="etude-de-cas-ibmax.html" role="menuitem">IB Max Company</a>
+            </div>
+            <div class="dropdown-column">
+              <h4>Témoignages</h4>
+              <a href="portfolio.html#temoignages" role="menuitem">Ce que disent nos clients</a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          Notre approche <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="dropdown-menu" role="menu">
+          <div class="dropdown-grid">
+            <div class="dropdown-column">
+              <h4>Méthode & Ressources</h4>
+              <a href="methode.html" role="menuitem">Notre méthode (4 étapes)</a>
+              <a href="faq.html" role="menuitem">FAQ</a>
+              <a href="faq.html#ebook-download" role="menuitem">Guide gratuit</a>
+              <a href="pourquoi.html" role="menuitem">3 raisons de nous choisir</a>
+            </div>
+            <div class="dropdown-column">
+              <h4>Notre équipe & Contact</h4>
+              <a href="equipe.html" role="menuitem">Notre équipe</a>
+              <a href="contact.html" role="menuitem">Contact</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="#contact" class="btn-diagnostic">Diagnostic Gratuit</a>
+      
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+    </div>
+  </nav>
+
+  
 </header>
-
-<main>
-  <!-- HERO -->
-  <section class="hero2" style="padding-top:56px">
-    <div class="c">
-      <div class="hbox" style="border-radius:22px;padding:48px 28px 0">
-        <div class="hgrid" style="display:grid;grid-template-columns:1fr;gap:40px;align-items:center">
-          <div class="hl">
-            <span class="tag2"><svg class="ico"><use href="#mail"/></svg> Contact & Diagnostic</span>
-            <h1 style="font-size:clamp(32px,6vw,48px)">Parlez-nous de votre projet</h1>
-            <p>30 min d'échange, audit technique & juridique, proposition claire. Sans engagement. Réponse sous 24h.</p>
-            <div class="acts2">
-              <a href="#formulaire" class="btn bg">Demander mon diagnostic <svg class="ico"><use href="#arrow"/></svg></a>
-              <a href="index.html#services" class="btn b3">← Retour aux services</a>
-            </div>
-          </div>
-          <div class="hr" style="display:none">
-            <svg class="ico" style="font-size:120px;color:var(--gold)"><use href="#mail"/></svg>
-          </div>
-        </div>
-      </div>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu principal">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-title">Menu</span>
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fermer le menu">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
     </div>
-  </section>
-
-  <!-- PROCESSUS -->
-  <section style="padding-top:32px">
-    <div class="c">
-      <div style="text-align:center;margin-bottom:48px">
-        <h2 style="font-size:clamp(28px,4vw,40px);margin-bottom:12px">Comment ça se passe</h2>
-        <p style="color:var(--mut);font-size:18px">Un processus clair en 3 étapes, sans surprise</p>
-      </div>
-      <div class="sg" style="grid-template-columns:repeat(3,1fr);max-width:1000px;margin:0 auto">
-        <article class="sc" style="background:#fff;border-color:var(--line);flex-direction:column;text-align:center">
-          <div class="ib" style="background:var(--ink);margin:0 auto 20px"><svg class="ico"><use href="#file"/></svg></div>
-          <h3>1. Remplissez le formulaire</h3>
-          <p style="color:var(--mut);flex:1">Besoin, périmètre, budget indicatif, délais. 2 minutes top chrono.</p>
-        </article>
-        <article class="sc" style="background:#fff;border-color:var(--line);flex-direction:column;text-align:center">
-          <div class="ib" style="background:var(--ink);margin:0 auto 20px"><svg class="ico"><use href="#user"/></svg></div>
-          <h3>2. Échange 30 min</h3>
-          <p style="color:var(--mut);flex:1">On valide le besoin, identifie les risques juridiques, répond à vos questions.</p>
-        </article>
-        <article class="sc" style="background:var(--ink2);border-color:var(--gold);flex-direction:column;text-align:center">
-          <div class="ib" style="background:var(--gold);color:var(--ink);margin:0 auto 20px"><svg class="ico"><use href="#shield"/></svg></div>
-          <h3 style="color:#fff">3. Proposition claire</h3>
-          <p style="color:#a9b6c9;flex:1">Devis unique (code + droit), planning, livrables. Vous décidez en toute transparence.</p>
-        </article>
-      </div>
+    <div class="mobile-menu-content">
+      <nav class="mobile-nav">
+        <ul class="mobile-links">
+          <li><a href="index.html" class="mobile-link">Accueil</a></li>
+          <li class="mobile-section">
+            <button class="mobile-section-toggle">Ce qu'on construit <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+            <ul class="mobile-sublinks">
+              <li><a href="service-1.html">Vitrine Essentielle</a></li>
+              <li><a href="service-2.html">E-commerce Essentiel</a></li>
+              <li><a href="service-3.html">Conformité RGPD Africain</a></li>
+              <li><a href="service-4.html">Secrétariat Juridique</a></li>
+              <li><a href="service-6.html">Audit de Conformité</a></li>
+              <li><a href="service-6.html">Pack Sérénité Annuel</a></li>
+            </ul>
+          </li>
+          <li class="mobile-section">
+            <button class="mobile-section-toggle">Réalisations <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+            <ul class="mobile-sublinks">
+              <li><a href="portfolio.html">Tous nos projets</a></li>
+              <li><a href="etude-de-cas-grillz-empire.html">Grillz Empire</a></li>
+              <li><a href="etude-de-cas-linefood.html">Linefood</a></li>
+              <li><a href="etude-de-cas-hk-shop.html">HK Shop</a></li>
+              <li><a href="etude-de-cas-ibmax.html">IB Max Company</a></li>
+              <li><a href="portfolio.html#temoignages">Témoignages clients</a></li>
+            </ul>
+          </li>
+          <li class="mobile-section">
+            <button class="mobile-section-toggle">Notre approche <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+            <ul class="mobile-sublinks">
+              <li><a href="methode.html">Notre méthode (4 étapes)</a></li>
+              <li><a href="pourquoi.html">3 raisons de nous choisir</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="faq.html#ebook-download">Guide gratuit</a></li>
+              <li><a href="equipe.html">Notre équipe</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a href="#contact" class="mobile-cta">Diagnostic Gratuit</a>
+      </nav>
     </div>
-  </section>
-
-  <!-- FORMULAIRE -->
-  <section id="formulaire" style="padding-top:0;padding-bottom:64px">
-    <div class="c">
-      <div style="max-width:700px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:40px">
-        <div style="text-align:center;margin-bottom:32px">
-          <h2 style="font-size:clamp(24px,3.5vw,32px);margin-bottom:8px;color:var(--ink)">Demander mon diagnostic gratuit</h2>
-          <p style="color:var(--mut)">Champs obligatoires *</p>
-        </div>
-        <form action="https://formspree.io/f/mzebvyzj" method="POST" style="display:flex;flex-direction:column;gap:20px">
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-            <div>
-              <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink)">Prénom *</label>
-              <input type="text" name="Prenom_Client" required style="width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;outline:none;transition:border .2s,box-shadow .2s;background:#fff" placeholder="Votre prénom" onfocus="this.style.borderColor='var(--gold)';this.style.boxShadow='0 0 0 3px rgba(212,175,55,.2)'" onblur="this.style.borderColor='var(--line)';this.style.boxShadow='none'">
-            </div>
-            <div>
-              <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink)">Nom *</label>
-              <input type="text" name="Nom_Client" required style="width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;outline:none;transition:border .2s,box-shadow .2s;background:#fff" placeholder="Votre nom" onfocus="this.style.borderColor='var(--gold)';this.style.boxShadow='0 0 0 3px rgba(212,175,55,.2)'" onblur="this.style.borderColor='var(--line)';this.style.boxShadow='none'">
-            </div>
-          </div>
-          <div>
-            <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink)">Email professionnel *</label>
-            <input type="email" name="Email_Client" required style="width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;outline:none;transition:border .2s,box-shadow .2s;background:#fff" placeholder="contact@votresociete.com" onfocus="this.style.borderColor='var(--gold)';this.style.boxShadow='0 0 0 3px rgba(212,175,55,.2)'" onblur="this.style.borderColor='var(--line)';this.style.boxShadow='none'">
-          </div>
-          <div>
-            <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink)">WhatsApp (avec indicatif) *</label>
-            <input type="tel" name="Telephone_WhatsApp" required style="width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;outline:none;transition:border .2s,box-shadow .2s;background:#fff" placeholder="+228 9X XX XX XX" onfocus="this.style.borderColor='var(--gold)';this.style.boxShadow='0 0 0 3px rgba(212,175,55,.2)'" onblur="this.style.borderColor='var(--line)';this.style.boxShadow='none'">
-          </div>
-          <div>
-            <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink)">Besoin prioritaire *</label>
-            <select name="Besoin_Client" required style="width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;outline:none;background:#fff;cursor:pointer;transition:border .2s,box-shadow .2s" onfocus="this.style.borderColor='var(--gold)';this.style.boxShadow='0 0 0 3px rgba(212,175,55,.2)'" onblur="this.style.borderColor='var(--line)';this.style.boxShadow='none'">
-              <option value="" disabled selected>Choisissez une option…</option>
-              <option value="Site Vitrine & Mentions Légales">Site Vitrine & Mentions Légales (99 000 XOF)</option>
-              <option value="E-commerce + Mobile Money">E-commerce + Mobile Money (179 000 XOF+)</option>
-              <option value="Conformité RGPD / Audit">Conformité RGPD Afrique / Audit (75 000 XOF+)</option>
-              <option value="Design UX/UI">Design UX/UI / Wireframes / Design System</option>
-              <option value="Maintenance & Pack Sérénité">Maintenance & Pack Sérénité (50 000 XOF/an+)</option>
-              <option value="Autre">Autre / Pas sûr encore</option>
-            </select>
-          </div>
-          <div>
-            <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink)">Dites-nous en plus *</label>
-            <textarea name="Description_Projet" required rows="5" style="width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:10px;font:inherit;outline:none;resize:vertical;transition:border .2s,box-shadow .2s;background:#fff" placeholder="Contexte, objectifs, délais, budget approximatif, contraintes techniques ou juridiques…" onfocus="this.style.borderColor='var(--gold)';this.style.boxShadow='0 0 0 3px rgba(212,175,55,.2)'" onblur="this.style.borderColor='var(--line)';this.style.boxShadow='none'"></textarea>
-          </div>
-          <div style="display:flex;align-items:flex-start;gap:10px;font-size:12px;color:var(--mut);line-height:1.5">
-            <input type="checkbox" name="Consentement_Legal" id="rgpd-consent" required style="margin-top:2px;width:18px;height:18px;accent-color:var(--gold);flex-shrink:0">
-            <label for="rgpd-consent">J'accepte que LegalTech Solutions traite mes données pour me répondre, conformément à la <a href="politique-confidentialite.html" style="color:var(--gold);text-decoration:underline">Politique de Confidentialité</a>. Je peux me désinscrire à tout moment.</label>
-          </div>
-          <button type="submit" class="btn bg" style="width:100%;justify-content:center;padding:16px 32px;font-size:16px">Envoyer ma demande <svg class="ico"><use href="#arrow"/></svg></button>
-        </form>
-        
-        <div style="background:rgba(212,175,55,.1);border-left:4px solid var(--gold);padding:20px;border-radius:0 12px 12px 0;margin-top:32px">
-          <strong style="color:var(--ink);display:block;margin-bottom:8px">Engagement :</strong>
-          <p style="color:var(--mut);margin:0">Aucun. Le diagnostic est gratuit et sans obligation de suite. On ne vous relance pas si vous ne le souhaitez pas.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- AVANTAGES -->
-  <section style="padding-top:0;padding-bottom:64px">
-    <div class="c">
-      <div style="text-align:center;margin-bottom:48px">
-        <h2 style="font-size:clamp(28px,4vw,40px);margin-bottom:12px">Pourquoi passer par nous ?</h2>
-        <p style="color:var(--mut);font-size:18px">Code + Droit réunis = gain de temps, d'argent et de sérénité</p>
-      </div>
-      <div class="sg" style="grid-template-columns:repeat(3,1fr);gap:20px;max-width:1000px;margin:0 auto">
-        <article class="sc" style="background:#fff;border-color:var(--line);text-align:center">
-          <svg class="ico" style="color:var(--gold);font-size:28px;margin-bottom:12px"><use href="#shield"/></svg>
-          <h3 style="margin-bottom:8px;color:var(--ink)">Conformité incluse</h3>
-          <p style="color:var(--mut);font-size:15px">Mentions légales, CGV, RGPD Afrique intégrés dès le devis.</p>
-        </article>
-        <article class="sc" style="background:#fff;border-color:var(--line);text-align:center">
-          <svg class="ico" style="color:var(--gold);font-size:28px;margin-bottom:12px"><use href="#clock"/></svg>
-          <h3 style="margin-bottom:8px;color:var(--ink)">Réponse 24h</h3>
-          <p style="color:var(--mut);font-size:15px">On vous recontacte sous 24h ouvrées pour caler le rendez-vous.</p>
-        </article>
-        <article class="sc" style="background:#fff;border-color:var(--line);text-align:center">
-          <svg class="ico" style="color:var(--gold);font-size:28px;margin-bottom:12px"><use href="#coins"/></svg>
-          <h3 style="margin-bottom:8px;color:var(--ink)">Économie 40%</h3>
-          <p style="color:var(--mut);font-size:15px">Vs développeur + cabinet juridique séparés. Un seul devis.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT ALTERNATIFS -->
-  <section style="padding-top:0;padding-bottom:64px">
-    <div class="c">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;max-width:900px;margin:0 auto">
-        <div>
-          <h2 style="font-size:clamp(28px,4vw,36px);margin-bottom:20px">Autres façons de nous joindre</h2>
-          <p style="color:var(--mut);margin-bottom:24px">Préférez l'email ou WhatsApp ? On répond aussi vite.</p>
-          <div style="display:flex;flex-direction:column;gap:16px">
-            <a href="mailto:omimoustakim@gmail.com" class="btn b2" style="padding:16px 32px;justify-content:flex-start">Email <svg class="ico"><use href="#mail"/></svg></a>
-            <a href="https://wa.me/22896042165" target="_blank" class="btn b2" style="padding:16px 32px;justify-content:flex-start">WhatsApp <svg class="ico"><use href="#phone"/></svg></a>
-          </div>
-          <div style="margin-top:24px;padding:20px;background:rgba(212,175,55,.1);border-left:4px solid var(--gold);border-radius:0 12px 12px 0">
-            <strong style="color:var(--ink);display:block;margin-bottom:8px">Bureaux :</strong>
-            <p style="color:var(--mut);margin:0">Lomé, Togo — Disponibles pour clients Afrique & Europe</p>
-          </div>
-        </div>
-        <div>
-          <div style="background:var(--ink);border-radius:var(--r);padding:40px;text-align:center;color:#fff">
-            <svg class="ico" style="color:var(--gold);font-size:48px;margin-bottom:16px"><use href="#phone"/></svg>
-            <h3 style="font-size:24px;margin-bottom:8px">Disponible sur WhatsApp</h3>
-            <p style="color:#a9b6c9;margin-bottom:24px">Réponse rapide pour vos questions urgentes</p>
-            <a href="https://wa.me/22896042165" target="_blank" class="btn bg" style="background:#25D366;color:#fff">Ouvrir WhatsApp <svg class="ico"><use href="#arrow"/></svg></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="ft">
-  <div class="c">
-    <div class="fg">
-      <div><a href="index.html" class="logo"><span class="mark">LTS</span><span class="logo-text">LegalTech Solutions</span></a><p class="tag">L'agence qui allie code et droit.</p></div>
-      <div><h4>Services</h4><ul><li><a href="service-1.html">Développement Web</a></li><li><a href="service-2.html">Mobile</a></li><li><a href="service-3.html">E-commerce</a></li><li><a href="service-4.html">Conformité</a></li></ul></div>
-      <div><h4>Légal</h4><ul><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="politique-confidentialite.html">Confidentialité</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li><a href="mailto:omimoustakim@gmail.com">omimoustakim@gmail.com</a></li><li>Lomé, Togo</li></ul></div>
-    </div>
-    <div class="fb"><span>© 2025 LegalTech Solutions.</span><span>Fait avec rigueur, code & droit.</span></div>
   </div>
-</footer>
 
-<script>
-  const n=document.getElementById('nav');
-  document.getElementById('bg').onclick=()=>n.classList.toggle('open');
-  n.querySelectorAll('a').forEach(a=>a.onclick=()=>n.classList.remove('open'));
-</script>
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true"></div>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-bg"></div>
+  <div class="contact-glow"></div>
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <p class="section-tag reveal">Contact</p>
+      <h2 class="section-title reveal">Réservez votre diagnostic gratuit</h2>
+      <p class="contact-desc reveal">Remplissez ce formulaire en 1 minute. Nous analysons vos besoins et vous proposons une feuille de route technique et juridique claire.</p>
+      <div class="contact-details reveal">
+        <div class="contact-item">
+          <span class="contact-icon">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </span>
+          <div>
+            <span class="contact-label">Email</span>
+            <a href="mailto:omimoustakim@gmail.com" class="contact-value">omimoustakim@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </span>
+          <div>
+            <span class="contact-label">WhatsApp — Bénin</span>
+            <a href="https://wa.me/22953333646?text=Bonjour%20LegalTech%20Solutions%2C%20je%20souhaite%20un%20diagnostic%20gratuit." target="_blank" class="contact-value">+229 53 33 36 46</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </span>
+          <div>
+            <span class="contact-label">WhatsApp — Togo</span>
+            <a href="https://wa.me/22896042165?text=Bonjour%20LegalTech%20Solutions%2C%20je%20souhaite%20un%20diagnostic%20gratuit." target="_blank" class="contact-value">+228 96 04 21 65</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </span>
+          <div>
+            <span class="contact-label">Localisation</span>
+            <span class="contact-value">International — Clients partout dans le monde</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" action="https://formspree.io/f/mzebvyzj" method="POST" accept-charset="UTF-8">
+      <input type="hidden" name="_subject" value="Nouvelle demande de diagnostic - LegalTech Solutions">
+      <input type="hidden" name="_template" value="table">
+      <div class="form-group">
+        <label for="client-name">Nom complet ou Raison sociale <span class="gold">*</span></label>
+        <input type="text" id="client-name" name="Nom_Client" required placeholder="Ex: S.A.R.L. Votre Entreprise">
+      </div>
+      <div class="form-group">
+        <label for="client-email">Adresse email professionnelle <span class="gold">*</span></label>
+        <input type="email" id="client-email" name="_replyto" required placeholder="contact@votreentreprise.tg">
+      </div>
+      <div class="form-group">
+        <label for="client-phone">Numéro WhatsApp (avec indicatif pays) <span class="gold">*</span></label>
+        <input type="tel" id="client-phone" name="Telephone_WhatsApp" required placeholder="Ex: +228 98 09 76 21">
+      </div>
+      <div class="form-group">
+        <label for="client-need">Quel est votre besoin prioritaire ? <span class="gold">*</span></label>
+        <select id="client-need" name="Besoin_Client" required>
+          <option value="" disabled selected>Choisissez une option...</option>
+          <option value="Site Vitrine & Mentions Légales">Création de Site Vitrine Pro & Mentions Légales</option>
+          <option value="Boutique E-commerce & Mobile Money">Boutique E-commerce & Intégration Mobile Money</option>
+          <option value="Mise en conformité Protection Données">Mise en conformité RGPD Africain / IPDCP</option>
+          <option value="Gestion de litige / Droit des Affaires">Gestion de litige commercial / Droit des Affaires</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="client-message">Décrivez votre projet ou votre besoin</label>
+        <textarea id="client-message" name="Message_Client" rows="4" placeholder="Parlez-nous de votre projet, vos objectifs, vos contraintes..."></textarea>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="rgpd-consent" name="Consentement_Légal_Validé" value="Oui, validé sur le site" required>
+        <label for="rgpd-consent">En soumettant ce formulaire, j'accepte que <strong>LegalTech Solutions</strong> traite mes informations professionnelles dans le but exclusif de réaliser mon diagnostic gratuit et de m'adresser une proposition de service conforme à la réglementation en vigueur. <span class="gold">*</span></label>
+      </div>
+      <button type="submit" class="btn btn-gold btn-full shimmer">
+        Demander mon diagnostic gratuit ?
+      </button>
+    </form>
+  </div>
+</section>
+
+<script src="script.js?v=4"></script>
+
+<!-- Bannière de Cookies - LegalTech Solutions -->
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+        <p>
+            <strong>LegalTech Solutions</strong> utilise des cookies pour optimiser votre expérience et analyser le trafic de notre plateforme. Vous pouvez accepter ou personnaliser leur utilisation. Consultez notre <a href="politique-confidentialite.html" target="_blank">Politique de Confidentialité</a>.
+        </p>
+        <div class="cookie-buttons">
+            <button id="btn-deny-cookies" class="btn-cookie btn-deny" data-fr="Refuser">Refuser</button>
+            <button id="btn-accept-cookies" class="btn-cookie btn-accept" data-fr="Accepter tout">Accepter tout</button>
+        </div>
+    </div>
+</div>
 </body>
 </html>
+
