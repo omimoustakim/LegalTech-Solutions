@@ -114,24 +114,78 @@ function initNavbar() {
     });
   }
 
-  // ═══ DESKTOP DROPDOWNS (click to open, click outside to close) ═══
-  var dropdownTriggers = document.querySelectorAll('.nav-dropdown .dropdown-trigger');
-  dropdownTriggers.forEach(function(btn) {
-    btn.addEventListener('click', function(e) {
+  // ═══ DESKTOP MEGA MENU (survol + clic + clavier) ═══
+  // Un seul panneau ouvert à la fois ; la barre reste toujours visible.
+  var dropdowns = Array.prototype.slice.call(document.querySelectorAll('.nav-dropdown'));
+  var closeTimer = null;
+  var canHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  function closeAllDropdowns() {
+    dropdowns.forEach(function(d) {
+      d.classList.remove('open');
+      var t = d.querySelector('.dropdown-trigger');
+      if (t) t.setAttribute('aria-expanded', 'false');
+    });
+    if (navbar) navbar.classList.remove('has-open');
+  }
+
+  function openDropdown(dd) {
+    clearTimeout(closeTimer);
+    dropdowns.forEach(function(d) {
+      if (d === dd) return;
+      d.classList.remove('open');
+      var t = d.querySelector('.dropdown-trigger');
+      if (t) t.setAttribute('aria-expanded', 'false');
+    });
+    dd.classList.add('open');
+    var trig = dd.querySelector('.dropdown-trigger');
+    if (trig) trig.setAttribute('aria-expanded', 'true');
+    if (navbar) navbar.classList.add('has-open');
+  }
+
+  function scheduleClose() {
+    clearTimeout(closeTimer);
+    closeTimer = setTimeout(closeAllDropdowns, 180);
+  }
+
+  dropdowns.forEach(function(dd) {
+    var trigger = dd.querySelector('.dropdown-trigger');
+    var panel = dd.querySelector('.dropdown-menu');
+    if (!trigger) return;
+
+    trigger.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
-      var dropdown = this.closest('.nav-dropdown');
-      var isOpen = dropdown.classList.contains('open');
-      document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
-      if (!isOpen) dropdown.classList.add('open');
+      // Souris (detail > 0) sur appareil à survol : le survol a déjà ouvert le panneau,
+      // le clic ne doit donc pas le refermer. Clavier / tactile : bascule normale.
+      var isMouseClick = e.detail > 0 && canHover;
+      if (dd.classList.contains('open') && !isMouseClick) closeAllDropdowns();
+      else openDropdown(dd);
+    });
+
+    if (canHover) {
+      dd.addEventListener('mouseenter', function() { openDropdown(dd); });
+      dd.addEventListener('mouseleave', scheduleClose);
+      if (panel) panel.addEventListener('mouseenter', function() { clearTimeout(closeTimer); });
+    }
+
+    dd.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') { closeAllDropdowns(); trigger.focus(); }
     });
   });
 
-  // Close dropdowns on outside click
+  // Fermer au clic en dehors, au scroll important, au passage en mobile
   document.addEventListener('click', function(e) {
-    if (!e.target.closest('.nav-dropdown')) {
-      document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
-    }
+    if (!e.target.closest('.nav-dropdown')) closeAllDropdowns();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeAllDropdowns();
+  });
+  window.addEventListener('resize', function() {
+    if (window.innerWidth <= 900) closeAllDropdowns();
+  });
+  document.querySelectorAll('.dropdown-menu a').forEach(function(a) {
+    a.addEventListener('click', closeAllDropdowns);
   });
 
   // ═══ ACTIVE NAV LINK ═══
@@ -179,7 +233,6 @@ window.initNavbar = initNavbar;
 document.addEventListener('DOMContentLoaded', function() {
   initNavbar();
 });
-
 
 
 // ═══ EBOOK FORM ═══
@@ -357,4 +410,30 @@ document.addEventListener('DOMContentLoaded', function() {
   grid.addEventListener('focusout', startAutoScroll);
 
   startAutoScroll();
+});
+
+// ═══ VIDEO PLAY BUTTON ═══
+document.addEventListener('DOMContentLoaded', function() {
+  var videoWrapper = document.getElementById('motionVideo');
+  var poster = document.getElementById('motionPoster');
+  var playBtn = document.getElementById('motionPlay');
+  var videoEl = document.getElementById('motionVideoEl');
+
+  if (playBtn && videoEl && poster) {
+    playBtn.addEventListener('click', function() {
+      videoWrapper.classList.add('playing');
+      videoEl.play().catch(function() {
+        // Autoplay was prevented, show poster again
+        videoWrapper.classList.remove('playing');
+      });
+    });
+
+    // If video ends or pauses, show poster again
+    videoEl.addEventListener('pause', function() {
+      videoWrapper.classList.remove('playing');
+    });
+    videoEl.addEventListener('ended', function() {
+      videoWrapper.classList.remove('playing');
+    });
+  }
 });

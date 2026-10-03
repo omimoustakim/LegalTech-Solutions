@@ -7,7 +7,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="style.css?v=13">
+
+<!-- Security: Content Security Policy -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://plausible.io https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://plausible.io https://formspree.io; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formspree.io;">
 
 <!-- Plausible Analytics (GDPR-friendly, no cookies, <1KB) -->
 <script defer data-domain="legaltechsolutions.org" src="https://plausible.io/js/script.js"></script>
@@ -183,7 +186,7 @@
           </span>
           <div>
             <span class="contact-label">WhatsApp Bénin</span>
-            <a href="https://wa.me/22953333646?text=Bonjour%20LegalTech%20Solutions%2C%20je%20souhaite%20un%20diagnostic%20gratuit." target="_blank" class="contact-value whatsapp-link">Discuter sur WhatsApp</a>
+            <a href="https://wa.me/22953333646?text=Bonjour%20LegalTech%20Solutions%2C%20je%20souhaite%20un%20diagnostic%20gratuit." target="_blank" rel="noopener noreferrer" class="contact-value whatsapp-link">Discuter sur WhatsApp</a>
           </div>
         </div>
         <div class="contact-item">
@@ -192,7 +195,7 @@
           </span>
           <div>
             <span class="contact-label">WhatsApp Togo</span>
-            <a href="https://wa.me/22896042165?text=Bonjour%20LegalTech%20Solutions%2C%20je%20souhaite%20un%20diagnostic%20gratuit." target="_blank" class="contact-value whatsapp-link">Discuter sur WhatsApp</a>
+            <a href="https://wa.me/22896042165?text=Bonjour%20LegalTech%20Solutions%2C%20je%20souhaite%20un%20diagnostic%20gratuit." target="_blank" rel="noopener noreferrer" class="contact-value whatsapp-link">Discuter sur WhatsApp</a>
           </div>
         </div>
         <div class="contact-item">
@@ -236,18 +239,23 @@
         <label for="client-message">Décrivez votre projet ou votre besoin</label>
         <textarea id="client-message" name="Message_Client" rows="4" placeholder="Parlez-nous de votre projet, vos objectifs, vos contraintes..."></textarea>
       </div>
+      <!-- Honeypot anti-spam -->
+      <div class="form-group honeypot" aria-hidden="true" style="display:none;position:absolute;left:-9999px;">
+        <label for="website_url">Ne remplissez pas ce champ</label>
+        <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off">
+      </div>
       <div class="form-check">
         <input type="checkbox" id="rgpd-consent" name="Consentement_Légal_Validé" value="Oui, validé sur le site" required>
         <label for="rgpd-consent">En soumettant ce formulaire, j'accepte que <strong>LegalTech Solutions</strong> traite mes informations professionnelles dans le but exclusif de réaliser mon diagnostic gratuit et de m'adresser une proposition de service conforme à la réglementation en vigueur. <span class="gold">*</span></label>
       </div>
-      <button type="submit" class="btn btn-gold btn-full shimmer">
-        Demander mon diagnostic gratuit ?
+      <button type="submit" class="btn btn-primary btn-full shimmer">
+        Demander mon diagnostic gratuit
       </button>
     </form>
   </div>
 </section>
 
-<script src="script.js?v=4"></script>
+<script src="script.js?v=6"></script>
 
 <!-- Bannière de Cookies - LegalTech Solutions -->
 <div id="cookie-banner" class="cookie-banner">
