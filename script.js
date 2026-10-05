@@ -288,7 +288,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // ═══ MODALES SERVICES ═══
 var modalOverlay;
 
-// Ouvrir une modale
 function openModal(id) {
   if (!modalOverlay) modalOverlay = document.getElementById('modalOverlay');
   var modal = document.getElementById('modal' + id);
@@ -299,7 +298,6 @@ function openModal(id) {
   }
 }
 
-// Fermer toutes les modales
 function closeModal() {
   if (!modalOverlay) modalOverlay = document.getElementById('modalOverlay');
   if (modalOverlay) modalOverlay.classList.remove('active');
@@ -308,6 +306,34 @@ function closeModal() {
   });
   document.body.style.overflow = '';
 }
+
+// Bind modal events (CSP blocks inline onclick handlers)
+document.addEventListener('DOMContentLoaded', function() {
+  // "En savoir plus" buttons
+  document.querySelectorAll('[data-modal]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var id = btn.getAttribute('data-modal');
+      if (id) openModal(id);
+    });
+  });
+
+  // Overlay click to close
+  var overlay = document.getElementById('modalOverlay');
+  if (overlay) {
+    overlay.addEventListener('click', function() {
+      closeModal();
+    });
+  }
+
+  // Close (X) buttons
+  document.querySelectorAll('.modal-close').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      closeModal();
+    });
+  });
+});
 
 // Fermer avec la touche Echap
 document.addEventListener('keydown', function(e) {
