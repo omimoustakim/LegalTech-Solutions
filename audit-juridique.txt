@@ -1,0 +1,27 @@
+AUDIT DES TEXTES JURIDIQUES · LEGALTECH SOLUTIONS
+Date : 8 octobre 2026
+
+Périmètre : mentions légales, politique de confidentialité, conditions générales, pages de services et formulaires présents dans l'archive fournie.
+
+CORRECTIONS APPLIQUÉES
+1. Suppression de la contradiction « aucun traitement sans consentement » : la politique distingue demande de contact, précontractuel, contrat et consentement.
+2. Suppression de la durée uniforme de trois ans : les durées sont maintenant liées à la finalité et au contexte.
+3. Clarification des prestataires Formspree, GitHub Pages et Plausible, ainsi que des transferts possibles.
+4. Correction de la contradiction entre « propriété exclusive de LegalTech » et transfert du code au client après paiement.
+5. Encadrement des formulations qui pouvaient faire croire à un cabinet d'avocats ou à une garantie de conformité absolue.
+6. Clarification du rôle de LegalTech en matière de contentieux : résolution amiable et orientation vers un avocat, sans représentation devant les tribunaux.
+7. Clarification des services tiers : domaine, hébergement, Mobile Money, WhatsApp, APIs et disponibilité.
+8. Correction des CGS : devis prioritaire, validation, obligations client, acomptes, maintenance, résiliation, responsabilité et droit applicable.
+9. Les pages de services précisent désormais leur périmètre et leurs limites.
+10. Les scripts d'analyse doivent être chargés uniquement après consentement. Le nouveau script de la refonte respecte ce principe.
+
+POINTS À COMPLÉTER AVANT MISE EN PRODUCTION
+- Forme juridique exacte de l'exploitant.
+- Adresse professionnelle complète.
+- Numéro d'immatriculation ou identifiant fiscal, si applicable.
+- Décision définitive sur le droit applicable et la juridiction, à faire valider selon les pays réellement ciblés.
+- Vérification des contrats et politiques des prestataires tiers.
+- Validation finale par un avocat ou conseil local au Togo/Bénin si le site doit être présenté comme une offre juridique réglementée.
+
+IMPORTANT
+Ces corrections améliorent la cohérence éditoriale et opérationnelle du site, mais ne remplacent pas une validation juridique locale. Les informations d'identification manquantes sont volontairement signalées plutôt qu'inventées.

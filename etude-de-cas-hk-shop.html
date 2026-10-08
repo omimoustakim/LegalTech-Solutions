@@ -1,288 +1,94 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html lang="fr" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Étude de Cas - HK Shop | LegalTech Solutions</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=12">
-
-<!-- Plausible Analytics (GDPR-friendly, no cookies, <1KB) -->
-<script defer data-domain="legaltechsolutions.org" src="https://plausible.io/js/script.js"></script>
-    <style>
-        .case-hero{padding:140px 0 80px;background:#0A192F;position:relative;overflow:hidden}
-        .case-hero-bg{position:absolute;inset:0;background:url('image/maillot.jpeg') center/cover no-repeat;opacity:.15}
-        .case-hero-content{position:relative;z-index:1;text-align:center}
-        .case-hero .section-tag{margin-bottom:12px}
-        .case-hero h1{font-size:clamp(28px,5vw,44px);color:#f1f5f9;margin-bottom:16px;max-width:700px;margin-left:auto;margin-right:auto}
-        .case-hero p{font-size:16px;color:rgba(255,255,255,.5);max-width:600px;margin:0 auto}
-        .case-section{padding:80px 0;background:#fff}
-        .case-section:nth-child(even){background:#f8fafc}
-        .case-container{max-width:800px;margin:0 auto;padding:0 24px}
-        .case-section h2{font-size:28px;color:#0A192F;margin-bottom:16px}
-        .case-section p{color:#475569;line-height:1.8;margin-bottom:20px}
-        .case-section blockquote{border-left:3px solid #D4AF37;padding:20px 24px;background:#f8fafc;border-radius:0 12px 12px 0;margin:24px 0;font-style:italic;color:#334155;line-height:1.7}
-        .case-list{list-style:none;padding:0;margin:20px 0}
-        .case-list li{padding:12px 0;border-bottom:1px solid #f1f5f9;display:flex;align-items:flex-start;gap:12px;color:#334155;line-height:1.7}
-        .case-list li::before{content:'?';color:#D4AF37;font-weight:700;flex-shrink:0}
-        .case-result{background:#0A192F;border-radius:16px;padding:40px;text-align:center;margin:40px 0}
-        .case-result h3{color:#D4AF37;font-size:20px;margin-bottom:12px}
-        .case-result p{color:rgba(255,255,255,.6);font-size:16px;line-height:1.7}
-        .back-link{display:inline-flex;align-items:center;gap:8px;color:#D4AF37;font-weight:600;font-size:14px;transition:color .2s}
-        .back-link:hover{color:#876a1a}
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HK Shop · Étude de cas · LegalTech Solutions</title>
+<meta name="description" content="Boutique en ligne de maillots de football authentiques, sécurisée et conforme.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://legaltechsolutions.org/etude-de-cas-hk-shop.html">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://plausible.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self'; connect-src 'self' https://plausible.io https://formspree.io; frame-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#4B2380">
+<meta name="author" content="Moustakim Omididji">
+<meta name="geo.region" content="TG"><meta name="geo.placename" content="Lomé, Togo">
+<meta property="og:type" content="website"><meta property="og:locale" content="fr_FR"><meta property="og:site_name" content="LegalTech Solutions">
+<meta property="og:url" content="https://legaltechsolutions.org/etude-de-cas-hk-shop.html"><meta property="og:title" content="HK Shop · Étude de cas · LegalTech Solutions"><meta property="og:description" content="Boutique en ligne de maillots de football authentiques, sécurisée et conforme.">
+<meta property="og:image" content="https://legaltechsolutions.org/assets/img/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="HK Shop · Étude de cas · LegalTech Solutions"><meta name="twitter:description" content="Boutique en ligne de maillots de football authentiques, sécurisée et conforme."><meta name="twitter:image" content="https://legaltechsolutions.org/assets/img/og-image.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<link rel="stylesheet" href="assets/css/main.css?v=2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://legaltechsolutions.org/#org", "name": "LegalTech Solutions", "url": "https://legaltechsolutions.org/", "logo": "https://legaltechsolutions.org/assets/img/logo.png", "image": "https://legaltechsolutions.org/assets/img/og-image.png", "description": "Agence Code + Droit : création de sites web et e-commerce Mobile Money, mentions légales, CGV et conformité RGPD africain.", "email": "omimoustakim@gmail.com", "telephone": "+22896042165", "founder": {"@type": "Person", "name": "Moustakim Omididji"}, "areaServed": ["TG", "BJ", "CI", "SN", "FR"], "address": {"@type": "PostalAddress", "addressLocality": "Lomé", "addressCountry": "TG"}, "priceRange": "sur devis– sur devis"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://legaltechsolutions.org/"}, {"@type": "ListItem", "position": 2, "name": "HK Shop", "item": "https://legaltechsolutions.org/etude-de-cas-hk-shop.html"}]}</script>
+<script src="assets/js/main.js?v=2" defer></script>
 </head>
 <body>
-
-<!-- NAVBAR -->
-<header class="navbar" id="navbar">
-  <nav class="nav-container">
-    <a href="index.html" class="nav-logo">
-      <span class="logo-icon">
-        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
-      </span>
-      <span class="logo-text"><span class="logo-bold">LEGAL</span><span class="logo-gold">TECH</span><span class="logo-sub">SOLUTIONS</span></span>
-    </a>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="nav-link" data-section="accueil">Accueil</a></li>
-      
-      <li class="nav-dropdown">
-        <button class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
-          Ce qu'on construit <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-        </button>
-        <div class="dropdown-menu" role="menu">
-          <div class="dropdown-grid">
-            <div class="dropdown-column">
-              <h4>Sites Web</h4>
-              <a href="service-1.html" role="menuitem">Vitrine Essentielle</a>
-              <a href="service-2.html" role="menuitem">E-commerce Essentiel</a>
-            </div>
-            <div class="dropdown-column">
-              <h4>Conformité & Juridique</h4>
-              <a href="service-3.html" role="menuitem">Conformité RGPD Africain</a>
-              <a href="service-4.html" role="menuitem">Secrétariat Juridique</a>
-              <a href="service-6.html" role="menuitem">Audit de Conformité</a>
-            </div>
-            <div class="dropdown-column">
-              <h4>Accompagnement</h4>
-              <a href="service-6.html" role="menuitem">Pack Sérénité Annuel</a>
-            </div>
-          </div>
-        </div>
-      </li>
-
-      <li class="nav-dropdown">
-        <button class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
-          Réalisations <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-        </button>
-        <div class="dropdown-menu" role="menu">
-          <div class="dropdown-grid">
-            <div class="dropdown-column">
-              <h4>Portfolio</h4>
-              <a href="portfolio.html" role="menuitem">Tous nos projets</a>
-              <a href="etude-de-cas-grillz-empire.html" role="menuitem">Grillz Empire</a>
-              <a href="etude-de-cas-linefood.html" role="menuitem">Linefood</a>
-              <a href="etude-de-cas-hk-shop.html" role="menuitem">HK Shop</a>
-              <a href="etude-de-cas-ibmax.html" role="menuitem">IB Max Company</a>
-            </div>
-            <div class="dropdown-column">
-              <h4>Témoignages</h4>
-              <a href="portfolio.html#temoignages" role="menuitem">Ce que disent nos clients</a>
-            </div>
-          </div>
-        </div>
-      </li>
-
-      <li class="nav-dropdown">
-        <button class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
-          Notre approche <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-        </button>
-        <div class="dropdown-menu" role="menu">
-          <div class="dropdown-grid">
-            <div class="dropdown-column">
-              <h4>Méthode & Ressources</h4>
-              <a href="methode.html" role="menuitem">Notre méthode (4 étapes)</a>
-              <a href="faq.html" role="menuitem">FAQ</a>
-              <a href="faq.html#ebook-download" role="menuitem">Guide gratuit</a>
-              <a href="pourquoi.html" role="menuitem">3 raisons de nous choisir</a>
-            </div>
-            <div class="dropdown-column">
-              <h4>Notre équipe & Contact</h4>
-              <a href="equipe.html" role="menuitem">Notre équipe</a>
-              <a href="contact.html" role="menuitem">Contact</a>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
-
-<div class="nav-actions">
-      <a href="contact.html" class="btn-diagnostic">Diagnostic Gratuit</a>
-      
-      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-    </div>
-  </nav>
-
-  
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="index.html" aria-label="LegalTech Solutions, accueil"><svg class="brand-seal" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#4B2380"/><circle cx="20" cy="20" r="15.2" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1" stroke-dasharray="1.6 1.6"/><text x="20" y="27.2" text-anchor="middle" font-family="IBM Plex Serif,Georgia,serif" font-size="21" font-weight="600" fill="#fff">§</text></svg><span class="brand-txt"><span class="brand-name">LegalTech</span><span class="brand-sub">Solutions</span></span></a>
+    <nav aria-label="Navigation principale"><ul class="nav">
+      <li><button class="nav-a" data-mega aria-expanded="false" aria-controls="m-exp">Expertises <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="mega" id="m-exp" role="menu"><a href="service-1.html" role="menuitem"><strong>Site vitrine</strong><span>Dès sur devis · 2 à 3 semaines</span></a><a href="service-2.html" role="menuitem"><strong>Boutique e-commerce</strong><span>Mobile Money + CGV · dès sur devis</span></a><a href="service-3.html" role="menuitem"><strong>Conformité RGPD africain</strong><span>APDP · IPDCP · ARTCI</span></a><a href="audit-conformite.html" role="menuitem"><strong>Audit de conformité</strong><span>Votre site existant, passé au crible</span></a><a href="service-4.html" role="menuitem"><strong>Secrétariat juridique</strong><span>Contrats, CFE, actes prêts à signer</span></a><a href="service-5.html" role="menuitem"><strong>Conseil & contentieux amiable</strong><span>Impayés, associés, mises en demeure</span></a><a href="service-6.html" role="menuitem"><strong>Pack Sérénité annuel</strong><span>Maintenance + veille juridique</span></a><a href="tarifs.html" role="menuitem"><strong>Tous les tarifs</strong><span>Le barème complet, sans surprise</span></a></div></li>
+      <li><a class="nav-a" href="portfolio.html">Réalisations</a></li>
+      <li><a class="nav-a" href="tarifs.html">Tarifs</a></li>
+      <li><button class="nav-a" data-mega aria-expanded="false" aria-controls="m-ag">L'agence <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="mega sm" id="m-ag" role="menu"><a href="methode.html" role="menuitem"><strong>Notre méthode</strong><span>4 étapes, de l'idée au site conforme</span></a><a href="pourquoi.html" role="menuitem"><strong>Pourquoi nous</strong><span>Une agence, deux expertises</span></a><a href="equipe.html" role="menuitem"><strong>L'équipe</strong><span>Développeurs et juristes, en binôme</span></a><a href="faq.html" role="menuitem"><strong>FAQ & guide gratuit</strong><span>Les réponses avant de signer</span></a></div></li>
+      <li><a class="nav-a" href="contact.html">Contact</a></li>
+    </ul></nav>
+    <a class="btn btn-sm hdr-cta" href="contact.html">Diagnostic gratuit <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="drawer"><span></span></button>
+  </div>
 </header>
-<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu principal">
-    <div class="mobile-menu-header">
-      <span class="mobile-menu-title">Menu</span>
-      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fermer le menu">
-        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
-    </div>
-    <div class="mobile-menu-content">
-      <nav class="mobile-nav">
-        <ul class="mobile-links">
-          <li><a href="index.html" class="mobile-link">Accueil</a></li>
-          <li class="mobile-section">
-            <button class="mobile-section-toggle">Ce qu'on construit <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
-            <ul class="mobile-sublinks">
-              <li><a href="service-1.html">Vitrine Essentielle</a></li>
-              <li><a href="service-2.html">E-commerce Essentiel</a></li>
-              <li><a href="service-3.html">Conformité RGPD Africain</a></li>
-              <li><a href="service-4.html">Secrétariat Juridique</a></li>
-              <li><a href="service-6.html">Audit de Conformité</a></li>
-              <li><a href="service-6.html">Pack Sérénité Annuel</a></li>
-            </ul>
-          </li>
-          <li class="mobile-section">
-            <button class="mobile-section-toggle">Réalisations <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
-            <ul class="mobile-sublinks">
-              <li><a href="portfolio.html">Tous nos projets</a></li>
-              <li><a href="etude-de-cas-grillz-empire.html">Grillz Empire</a></li>
-              <li><a href="etude-de-cas-linefood.html">Linefood</a></li>
-              <li><a href="etude-de-cas-hk-shop.html">HK Shop</a></li>
-              <li><a href="etude-de-cas-ibmax.html">IB Max Company</a></li>
-              <li><a href="portfolio.html#temoignages">Témoignages clients</a></li>
-            </ul>
-          </li>
-          <li class="mobile-section">
-            <button class="mobile-section-toggle">Notre approche <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
-            <ul class="mobile-sublinks">
-              <li><a href="methode.html">Notre méthode (4 étapes)</a></li>
-              <li><a href="pourquoi.html">3 raisons de nous choisir</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="faq.html#ebook-download">Guide gratuit</a></li>
-              <li><a href="equipe.html">Notre équipe</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </li>
-        </ul>
-        <a href="contact.html" class="mobile-cta">Diagnostic Gratuit</a>
-      </nav>
-    </div>
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-bg" data-close></div>
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="drawer-top"><a class="brand" href="index.html"><svg class="brand-seal" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#4B2380"/><circle cx="20" cy="20" r="15.2" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1" stroke-dasharray="1.6 1.6"/><text x="20" y="27.2" text-anchor="middle" font-family="IBM Plex Serif,Georgia,serif" font-size="21" font-weight="600" fill="#fff">§</text></svg><span class="brand-txt"><span class="brand-name">LegalTech</span><span class="brand-sub">Solutions</span></span></a><button class="drawer-x" data-close aria-label="Fermer le menu">×</button></div>
+    <nav aria-label="Menu mobile">
+      <h4>Expertises</h4><a href="service-1.html">Site vitrine</a><a href="service-2.html">Boutique e-commerce</a><a href="service-3.html">Conformité RGPD africain</a><a href="audit-conformite.html">Audit de conformité</a><a href="service-4.html">Secrétariat juridique</a><a href="service-5.html">Conseil & contentieux amiable</a><a href="service-6.html">Pack Sérénité annuel</a>
+      <h4>Agence</h4><a href="portfolio.html">Réalisations</a><a href="tarifs.html">Tarifs</a><a href="methode.html">Notre méthode</a><a href="pourquoi.html">Pourquoi nous</a><a href="equipe.html">L'équipe</a><a href="faq.html">FAQ & guide gratuit</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="drawer-foot"><a class="btn" href="contact.html">Réserver mon diagnostic gratuit</a><a class="btn btn-ghost" href="https://wa.me/22896042165?text=Bonjour%20LegalTech%20Solutions%2C%20je%20souhaite%20un%20diagnostic%20gratuit." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg> WhatsApp</a></div>
   </div>
-
-  <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true"></div>
-
-<section class="case-hero">
-  <div class="case-hero-bg"></div>
-  <div class="case-container case-hero-content">
-    <img src="image/maillot.jpeg" alt="HK Shop  Maillots de Football" style="width:120px;height:120px;object-fit:cover;border-radius:16px;margin-bottom:24px;border:2px solid rgba(212,175,55,.3)">
-    <p class="section-tag gold">E-commerce & Protection</p>
-    <h1>HK Shop  E-commerce & Protection</h1>
-    <p>Déploiement d'une boutique en ligne de maillots de football sécurisée et conforme aux réglementations.</p>
-    <a href="https://omimoustakim.github.io/hk-shop/" target="_blank" class="btn btn-outline" style="margin-top:24px;border-color:#D4AF37;color:#D4AF37">Voir le site HK Shop ?</a>
-  </div>
-</section>
-
-<section class="case-section">
-  <div class="case-container">
-    <h2>La Problématique</h2>
-    <blockquote>
-      Hakim, fondateur de HK Shop, souhaitait lancer une boutique en ligne spécialisée dans la vente de maillots de football authentiques. Le marché manquait d'une plateforme fiable offrant des maillots officiels avec un paiement adapté aux réalités locales (espèces à la livraison). L'absence de mentions légales, d'une politique de retour claire et d'un cadre juridique pour le paiement à la livraison représentait un risque juridique majeur pour l'activité.
-    </blockquote>
-  </div>
-</section>
-
-<section class="case-section">
-  <div class="case-container">
-    <h2>Notre Apport</h2>
-    <p>Une approche hybride Tech + Droit pour transformer un concept en plateforme e-commerce complète et conforme :</p>
-    <ul class="case-list">
-      <li><strong>Volet Technique :</strong> Développement d'une interface web fluide optimisée pour mobile, avec intégration d'un catalogue dynamique de produits organisés par clubs et ligues.</li>
-      <li><strong>Tunnel de Commande Simplifié :</strong> Système de commande avec redirection automatique vers WhatsApp pour une gestion directe et sans intermédiaire technique lourd.</li>
-      <li><strong>Conformité Juridique :</strong> Rédaction sur-mesure des conditions de retour gratuit sous 30 jours, encadrement juridique du protocole de paiement en espèces à la livraison.</li>
-      <li><strong>Mentions Légales Obligatoires :</strong> Rédaction et intégration technique des Mentions Légales, protégeant l'activité et les consommateurs.</li>
-    </ul>
-  </div>
-</section>
-
-<section class="case-section">
-  <div class="case-container">
-    <h2>Résultats Mesurables</h2>
-    <div class="case-metrics">
-      <div class="metric">
-        <span class="metric-value">0</span>
-        <span class="metric-label">Litige paiement / retour</span>
+</div>
+<main id="main">
+<section class="sec phero"><div class="wrap-narrow"><nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">/</span><span aria-current="page">HK Shop</span></nav><span class="label rv">E-commerce · Togo</span><h1 class="rv rv-d1">HK Shop</h1><p class="lead rv rv-d2">Boutique en ligne de maillots de football authentiques, sécurisée et conforme.</p><p class="mono rv rv-d3" style="margin-top:22px;color:var(--ink-3)">Dernière mise à jour : 8 octobre 2026</p></div></section><section class="sec-tight"><div class="wrap"><div class="cs-cover"><img src="assets/img/hk-shop.webp" alt="HK Shop" width="1200" height="560"></div><div class="hero-ctas" style="margin-top:24px"><a class="btn" href="https://omimoustakim.github.io/hk-shop/" target="_blank" rel="noopener">Voir le projet <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="portfolio.html">Retour aux réalisations</a></div></div></section><section class="sec"><div class="wrap split"><div><span class="label">La problématique</span><h2 class="rv" style="margin-top:18px">Ce qu'il fallait sécuriser.</h2></div><div class="prose rv rv-d1"><p>Hakim voulait lancer une boutique de maillots de football authentiques avec un paiement adapté aux réalités locales : espèces à la livraison. Sans mentions légales, sans politique de retour claire ni cadre pour le paiement à la livraison, le risque juridique était majeur.</p></div></div></section><section class="sec sheet"><div class="wrap"><div class="sec-head"><div><span class="label">Notre apport</span><h2 class="rv rv-d1">Tech et droit, dans la même livraison.</h2></div></div><ul class="deliver"><li class="rv"><span class="ic">01</span><div><h3>Interface mobile</h3><p>Catalogue dynamique organisé par clubs et ligues, pensé d'abord pour le téléphone.</p></div></li><li class="rv"><span class="ic">02</span><div><h3>Tunnel de commande simplifié</h3><p>Redirection automatique vers WhatsApp pour une gestion directe, sans intermédiaire technique lourd.</p></div></li><li class="rv"><span class="ic">03</span><div><h3>Cadre juridique</h3><p>Conditions de retour gratuit sous 30 jours et protocole de paiement en espèces à la livraison, rédigés sur-mesure.</p></div></li><li class="rv"><span class="ic">04</span><div><h3>Mentions légales</h3><p>Rédaction et intégration technique, pour protéger l'activité et les consommateurs.</p></div></li></ul></div></section><section class="sec"><div class="wrap"><div class="sec-head"><div><span class="label">Résultats</span><h2 class="rv rv-d1">Les chiffres qui comptent.</h2></div></div><div class="cs-metrics"><div><b>0</b><span>litige paiement ou retour</span></div><div><b>4 sem.</b><span>de développement</span></div><div><b>+200 %</b><span>de commandes vs prévision, mois 1</span></div><div><b>30 j</b><span>de retour gratuit encadré</span></div></div><div class="split" style="margin-top:56px"><div><span class="label">Le résultat concret</span></div><div class="prose"><p>HK Shop a lancé son activité avec un cadre juridique solide. Les commandes affluent via WhatsApp, le paiement à la livraison est encadré, et Hakim développe son catalogue.</p></div></div></div></section><section class="sec-tight"><div class="wrap"><figure class="quote rv" style="max-width:720px;margin:0 auto"><blockquote>Le Pack Sérénité est une tuerie. Je n'ai plus à me soucier du renouvellement de mon domaine ni des mises à jour légales. Je me concentre sur mes ventes.</blockquote><figcaption><span class="ava">H</span><span><b>Hakim</b><span>Fondateur, HK Shop · Togo</span></span></figcaption></figure></div></section><section class="sec-tight"><div class="wrap"><div class="cta-band rv">
+  <svg class="seal-bg" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="transparent"/><circle cx="20" cy="20" r="15.2" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1" stroke-dasharray="1.6 1.6"/><text x="20" y="27.2" text-anchor="middle" font-family="IBM Plex Serif,Georgia,serif" font-size="21" font-weight="600" fill="#fff">§</text></svg>
+  <div><h2>Votre projet est le prochain.</h2><p>Diagnostic gratuit, feuille de route claire, zéro promesse magique.</p></div>
+  <div class="acts"><a class="btn btn-light" href="contact.html">Réserver mon diagnostic <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-line-light" href="https://wa.me/22896042165?text=Bonjour%20LegalTech%20Solutions%2C%20je%20souhaite%20un%20diagnostic%20gratuit." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg> Écrire sur WhatsApp</a></div>
+</div></div></section>
+</main>
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div>
+        <a class="brand" href="index.html"><svg class="brand-seal" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#4B2380"/><circle cx="20" cy="20" r="15.2" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1" stroke-dasharray="1.6 1.6"/><text x="20" y="27.2" text-anchor="middle" font-family="IBM Plex Serif,Georgia,serif" font-size="21" font-weight="600" fill="#fff">§</text></svg><span class="brand-txt"><span class="brand-name">LegalTech</span><span class="brand-sub">Solutions</span></span></a>
+        <p class="ftr-pitch">L'alliance du code et du droit pour l'écosystème numérique africain.</p><div class="ftr-social" aria-label="WhatsApp et e-mail"><a href="https://wa.me/22896042165?text=Bonjour%20LegalTech%20Solutions%2C%20je%20souhaite%20un%20diagnostic%20gratuit." target="_blank" rel="noopener"><img src="assets/img/whatsapp.svg" alt="" width="20" height="20">WhatsApp Togo</a><a href="https://wa.me/22953333646?text=Bonjour%20LegalTech%20Solutions%2C%20je%20souhaite%20un%20diagnostic%20gratuit." target="_blank" rel="noopener"><img src="assets/img/whatsapp.svg" alt="" width="20" height="20">WhatsApp Bénin</a><a href="mailto:omimoustakim@gmail.com"><img src="assets/img/email.svg" alt="" width="20" height="20">E-mail</a></div>
+        <a class="btn btn-light btn-sm" href="contact.html">Diagnostic gratuit <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <div class="metric">
-        <span class="metric-value">4</span>
-        <span class="metric-label">Semaines de développement</span>
-      </div>
-      <div class="metric">
-        <span class="metric-value">+200%</span>
-        <span class="metric-label">Commandes mois 1 vs prévision</span>
-      </div>
-      <div class="metric">
-        <span class="metric-value">30j</span>
-        <span class="metric-label">Retour gratuit encadré juridiquement</span>
-      </div>
+      <div><h4>Expertises</h4><ul>
+        <li><a href="service-1.html">Site vitrine</a></li><li><a href="service-2.html">E-commerce Mobile Money</a></li><li><a href="service-3.html">Conformité RGPD africain</a></li><li><a href="audit-conformite.html">Audit de conformité</a></li><li><a href="service-4.html">Secrétariat juridique</a></li><li><a href="service-5.html">Conseil & contentieux</a></li><li><a href="service-6.html">Pack Sérénité</a></li></ul></div>
+      <div><h4>Agence</h4><ul>
+        <li><a href="portfolio.html">Réalisations</a></li><li><a href="tarifs.html">Tarifs</a></li><li><a href="methode.html">Méthode</a></li><li><a href="pourquoi.html">Pourquoi nous</a></li><li><a href="equipe.html">Équipe</a></li><li><a href="faq.html">FAQ & guide gratuit</a></li></ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="mailto:omimoustakim@gmail.com">omimoustakim@gmail.com</a></li>
+        <li><a href="https://wa.me/22953333646?text=Bonjour%20LegalTech%20Solutions%2C%20je%20souhaite%20un%20diagnostic%20gratuit." target="_blank" rel="noopener">WhatsApp Bénin · +229 53 33 36 46</a></li>
+        <li><a href="https://wa.me/22896042165?text=Bonjour%20LegalTech%20Solutions%2C%20je%20souhaite%20un%20diagnostic%20gratuit." target="_blank" rel="noopener">WhatsApp Togo · +228 96 04 21 65</a></li>
+        <li>Lomé · Cotonou · à distance, partout</li></ul></div>
     </div>
-  </div>
-</section>
-
-<section class="case-section">
-  <div class="case-container">
-    <div class="case-result">
-      <h3>Le Résultat Concret</h3>
-      <p>Une plateforme e-commerce opérationnelle, 100% conforme aux réglementations, qui a permis à HK Shop de lancer une activité de vente de maillots de football avec un cadre juridique solide. Les commandes affluent via WhatsApp, le paiement à la livraison est encadré, et Hakim peut se concentrer sur le développement de son catalogue et l'expansion de son activité.</p>
-    </div>
-  </div>
-</section>
-
-<section class="case-section">
-  <div class="case-container" style="text-align:center">
-    <a href="contact.html#formulaire" class="btn btn-gold shimmer">Vous aussi, sécurisez votre projet ?</a>
-    <br><br>
-    <a href="index.html#portfolio" class="back-link">? Retour au portfolio</a>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <p>&copy; 2026 LEGALTECH SOLUTIONS. Tous droits réservés.</p>
-    <div class="footer-links">
-      <a href="mentions-legales.html">Mentions Légales</a>
-      <span class="footer-sep">|</span>
-      <a href="politique-confidentialite.html">Politique de Confidentialité</a>
+    <p class="ftr-legal">LegalTech Solutions n'est pas un cabinet d'avocats. Nos prestations relèvent de l'ingénierie technico-juridique et du conseil opérationnel en conformité numérique. Toute procédure contentieuse est orientée vers un avocat inscrit au barreau.</p>
+    <div class="ftr-bot">
+      <span>© <span data-year>2026</span> LegalTech Solutions. Tous droits réservés.</span>
+      <nav aria-label="Liens légaux"><a href="mentions-legales.html">Mentions légales</a><a href="politique-confidentialite.html">Confidentialité</a><a href="conditions-generales.html">Conditions générales</a><a href="#" data-cookie-reset>Gérer les cookies</a></nav>
     </div>
   </div>
 </footer>
-
-<script src="script.js?v=5"></script>
-
-<!-- Bannière de Cookies - LegalTech Solutions -->
-<div id="cookie-banner" class="cookie-banner">
-    <div class="cookie-content">
-        <p>
-            <strong>LegalTech Solutions</strong> utilise des cookies pour optimiser votre expérience et analyser le trafic de notre plateforme. Vous pouvez accepter ou personnaliser leur utilisation. Consultez notre <a href="politique-confidentialite.html" target="_blank">Politique de Confidentialité</a>.
-        </p>
-        <div class="cookie-buttons">
-            <button id="btn-deny-cookies" class="btn-cookie btn-deny" data-fr="Refuser">Refuser</button>
-            <button id="btn-accept-cookies" class="btn-cookie btn-accept" data-fr="Accepter tout">Accepter tout</button>
-        </div>
-    </div>
+<div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Préférences cookies">
+  <p><b>Vos données, votre choix.</b> Nous mesurons l'audience de façon anonyme (Plausible, sans cookie publicitaire) uniquement si vous l'acceptez. <a href="politique-confidentialite.html">En savoir plus</a></p>
+  <div class="cookie-acts"><button class="btn btn-ghost" data-consent="no">Refuser</button><button class="btn" data-consent="yes">Accepter</button></div>
 </div>
+<a class="wa-float" href="https://wa.me/22896042165?text=Bonjour%20LegalTech%20Solutions%2C%20je%20souhaite%20un%20diagnostic%20gratuit." target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></a>
 </body>
 </html>
-
