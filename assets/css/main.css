@@ -184,15 +184,23 @@ em.ital,.ital{font-style:italic;font-weight:400}
 .acte.done .acte-foot .ok{opacity:1}
 
 /* ---------- Bande de preuve ---------- */
-.proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--sheet)}
+.proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--sheet);overflow:hidden}
 .proof-in{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:40px;padding:26px 0}
 .proof-k{font:500 13px/1.3 var(--mono);color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase;max-width:15ch}
-.proof-logos{display:flex;flex-wrap:wrap;justify-content:space-around;gap:16px 40px}
-.proof-logos a{text-decoration:none;font:600 22px/1 var(--serif);letter-spacing:-.02em;color:var(--ink-2);transition:color .2s}
-.proof-logos a:hover{color:var(--violet)}
-.proof-logos a:nth-child(2){font-style:italic;font-weight:500}
-.proof-logos a:nth-child(3){font-family:var(--mono);font-weight:500;font-size:19px;letter-spacing:.04em}
-.proof-logos a:nth-child(4){font-family:var(--sans);font-weight:700;letter-spacing:.06em;font-size:18px;text-transform:uppercase}
+.proof-logos{display:flex;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.proof-logos-track{display:flex;align-items:center;gap:48px;animation:logo-scroll 25s linear infinite;flex-shrink:0;white-space:nowrap}
+.proof-logos-track a{text-decoration:none;display:flex;align-items:center;justify-content:center;opacity:.85;transition:opacity .2s,transform .2s;height:40px;flex-shrink:0}
+.proof-logos-track a:hover{opacity:1;transform:translateY(-1px)}
+.proof-logos-track a img{height:36px;width:auto;max-width:140px;object-fit:contain;display:block;filter:grayscale(0.15)}
+.proof-logos-track a:hover img{filter:none}
+@keyframes logo-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce) {
+  .proof-logos-track {
+    animation-duration: 25s !important;
+    animation-iteration-count: infinite !important;
+  }
+}
+.proof-logos-track:hover{animation-play-state:paused}
 .proof-stats{display:flex;gap:32px}
 .proof-stats div{text-align:right}
 .proof-stats b{display:block;font:600 30px/1 var(--serif);letter-spacing:-.02em}
@@ -498,7 +506,7 @@ em.ital,.ital{font-style:italic;font-weight:400}
   .sec-head{align-items:start}
   .acte{transform:none;margin-right:12px}
   .proof-in{grid-template-columns:1fr;gap:20px;text-align:left}
-  .proof-logos{justify-content:flex-start}
+  .proof-logos{justify-content:flex-start;mask-image:none;-webkit-mask-image:none}
   .proof-stats div{text-align:left}
   .bareme-group{grid-template-columns:1fr}
   .bareme-rows{border-left:0}
@@ -570,8 +578,7 @@ html,body{max-width:100%;overflow-x:hidden}
   .acte-top{font-size:11px;padding:12px 14px}
   .acte-law{padding:16px 15px 20px}
   .acte-law .cl p{font-size:14px}
-  .proof-logos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  .proof-logos a{font-size:18px}
+  .proof-logos{overflow:hidden}
   .proof-stats{display:grid;grid-template-columns:1fr 1fr}
   .proof-stats b{font-size:26px}
   .risk-fix{align-items:flex-start;padding:18px}
